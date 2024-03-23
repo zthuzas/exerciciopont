@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+#DEFINE pi = 3,14159;
+
+void calcularAreaVolumeEsfera(float raio, float *area, float *volume) {
+
+    *area = 4 * pi * raio * raio;
+
+    *volume = (4.0 / 3.0) * pi * pow(raio, 3);
+}
+
+int main() {
+    float raio, area, volume;
+    
+    printf("Digite o raio da esfera: ");
+    scanf("%f", &raio);
+
+    calcularAreaVolumeEsfera(raio, &area, &volume);
+
+    printf("Área da superfície da esfera: %.2f\n", area);
+    printf("Volume da esfera: %.2f\n", volume);
+
+    return 0;
+}
