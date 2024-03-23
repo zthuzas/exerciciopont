@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int 1, 2;
+    int *ptr1, *ptr2;
+
+    printf("Digite o valor da primeira variável inteira: ");
+    scanf("%d", &1);
+
+    printf("Digite o valor da segunda variável inteira: ");
+    scanf("%d", &2);
+    
+    ptr1 = &v1;
+    ptr2 = &v2;
+
+    // Compara os endereços e exibe o conteúdo do maior endereço
+    if (ptr1 > ptr2) {
+        printf("Conteúdo do maior endereço: %d\n", *ptr1);
+    } else if (ptr2 > ptr1) {
+        printf("Conteúdo do maior endereço: %d\n", *ptr2);
+    } else {
+        printf("Os endereços são iguais.\n");
+    }
+
+    return 0;
+}
